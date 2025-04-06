@@ -1,0 +1,198 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color:bisque;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+nav ul {
+    float: right;
+    margin-top: -45px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+    padding: 15px 25px;
+}
+
+nav ul li a:hover {
+    color: #000000; /* Change to your desired hover color */
+    border: 1px solid rgb(249, 171, 3);
+    background-color: rgb(255, 119, 0);
+    transform: scale(2.1);
+}
+.welcome-banner {
+    text-align: center;
+    color: #fff;
+    background-image: url("./food.png");
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    height: 800px; /* Set a specific height for the banner */
+    display: flex; /* Use flexbox to center content vertically */
+    align-items: center; /* Center content vertically */
+}
+
+.welcome-banner h2 {
+    color: #ff7300; /* Adjust text color for visibility */
+    margin-top: -700px;
+    padding-left: 600px;
+}
+
+
+footer {
+    background-color: #ff860f; /* Dark orange footer background */
+    color: #000000; /* White text color */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin-top: 0px;
+} 
+#home img{
+    height: 300px; /* Adjust as needed */
+    
+}
+
+
+/* Media Queries for responsiveness */
+
+@media screen and (max-width: 767px) {
+    .welcome-banner {
+        height: 400px; /* Adjust height for phones */
+    }
+
+    .welcome-banner h2 {
+        margin-top: 0; /* Reset margin */
+        padding-left: 0; /* Reset padding */
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .welcome-banner {
+        height: 600px; /* Adjust height for tablets */
+    }
+
+    .welcome-banner h2 {
+        margin-top: -500px; /* Adjust margin for tablet screens */
+        padding-left: 250px; /* Adjust padding for tablet screens */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .welcome-banner {
+        height: 800px; /* Adjust height for laptops */
+    }
+
+    .welcome-banner h2 {
+        margin-top: -700px; /* Adjust margin for laptop screens */
+        padding-left: 600px; /* Adjust padding for laptop screens */
+    }
+}
+/* Media Queries for responsiveness */
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 100%; /* Adjust container width for smaller screens */
+    }
+
+    header {
+        padding: 10px 0; /* Adjust header padding for smaller screens */
+    }
+
+    .logo img {
+        height: 60px; /* Reduce logo height for smaller screens */
+    }
+
+    nav ul {
+        margin-top: -35px; /* Adjust margin for smaller screens */
+    }
+
+    nav ul li a {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+    }
+
+    footer {
+        padding: 15px; /* Adjust footer padding for smaller screens */
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        padding: 15px 0; /* Adjust header padding for tablet screens */
+    }
+
+    .logo img {
+        height: 70px; /* Adjust logo height for tablet screens */
+    }
+
+    nav ul {
+        margin-top: -40px; /* Adjust margin for tablet screens */
+    }
+
+    nav ul li a {
+        padding: 12px 20px; /* Adjust padding for tablet screens */
+    }
+
+    footer {
+        padding: 20px; /* Adjust footer padding for tablet screens */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        padding: 20px 0; /* Adjust header padding for laptop screens */
+    }
+
+    .logo img {
+        height: 80px; /* Adjust logo height for laptop screens */
+    }
+
+    nav ul {
+        margin-top: -45px; /* Adjust margin for laptop screens */
+    }
+
+    nav ul li a {
+        padding: 15px 25px; /* Adjust padding for laptop screens */
+    }
+
+    footer {
+        padding: 20px; /* Adjust footer padding for laptop screens */
+    }
+}

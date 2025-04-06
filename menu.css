@@ -1,0 +1,271 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color:bisque;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+nav ul {
+    float: right;
+    margin-top: -45px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+    padding: 15px 25px;
+}
+
+nav ul li a:hover {
+    color: #000000; /* Change to your desired hover color */
+    border: 1px solid rgb(249, 171, 3);
+    background-color: rgb(255, 119, 0);
+    transform: scale(2.1);
+}
+
+/* Menu CSS */
+#menu .contain {
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+
+.menu-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust as needed */
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.starter,
+.main,
+.dessert,
+.beverage {
+    flex: 1 1 calc(25% - 20px); /* Adjust width as needed */
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px; /* Add margin between categories */
+}
+
+.starter h3,
+.main h3,
+.dessert h3,
+.beverage h3 {
+    text-align: center;
+    padding: 15px 0;
+    margin: 0;
+    background-color: #f05d0d;
+    color: #fff;
+}
+
+.starter ul,
+.main ul,
+.dessert ul,
+.beverage ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+.beverage ul li {
+    list-style: none;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    color: rgb(6, 0, 2);
+}
+.dessert ul li {
+    list-style: none;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    color: rgb(255, 255, 255);
+}
+.main ul li {
+    list-style: none;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    color: rgb(255, 255, 255);
+}
+.starter ul li {
+    list-style: none;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    color: rgb(255, 255, 255);
+}
+
+.starter ul li:last-child,
+.main ul li:last-child,
+.dessert ul li:last-child,
+.beverage ul li:last-child {
+    border-bottom: none;
+}
+
+.starter ul li span,
+.main ul li span,
+.dessert ul li span,
+.beverage ul li span {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+}
+
+.starter ul li span:first-child,
+.main ul li span:first-child,
+.dessert ul li span:first-child,
+.beverage ul li span:first-child {
+    font-weight: bold;
+}
+
+.background img {
+    max-width: 100%;
+    height: 800px;
+    padding-top: 0px;
+}
+
+
+
+
+footer {
+    background-color: #ff860f; /* Dark orange footer background */
+    color: #000000; /* White text color */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+} 
+.starter{
+    background-image: url("https://static.finmail.com/wp-content/uploads/2021/07/04124653/1.jpg");
+
+}
+.main{
+    background-image: url("https://www.altitudehimalaya.com/media/files/Blog/Food/Most-Popular-Nepalese-Foods.jpeg");
+    
+}
+.dessert{
+    background-image: url("https://food.fnr.sndimg.com/content/dam/images/food/fullset/2012/12/19/0/CCDevour_Dozier-triple-chocolate-trifle-recipe_s4x3.jpg.rend.hgtvcom.616.462.suffix/1371613762657.jpeg");
+    
+}
+.beverage{
+    background-image: url("https://camillestyles.com/wp-content/uploads/2020/01/4b3584da-fruit-infused-water.jpg");
+    
+}
+
+/* Media Queries for responsiveness */
+
+/* For Tablets */
+@media only screen and (max-width: 768px) {
+    .menu-categories {
+        justify-content: center;
+    }
+
+    .starter,
+    .main,
+    .dessert,
+    .beverage {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+/* For Phones */
+@media only screen and (max-width: 480px) {
+    .menu-categories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .starter,
+    .main,
+    .dessert,
+    .beverage {
+        width: 100%;
+    }
+}
+
+
+/* Media Queries for responsiveness */
+
+/* For Tablets */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 15px 0; /* Adjust header padding for tablet screens */
+    }
+
+    .logo img {
+        height: 70px; /* Adjust logo height for tablet screens */
+    }
+
+    nav ul {
+        margin-top: -40px; /* Adjust margin for tablet screens */
+    }
+
+    nav ul li a {
+        padding: 12px 20px; /* Adjust padding for tablet screens */
+    }
+
+    footer {
+        padding: 20px; /* Adjust footer padding for tablet screens */
+    }
+}
+
+/* For Phones */
+@media only screen and (max-width: 480px) {
+    header {
+        padding: 10px 0; /* Adjust header padding for smaller screens */
+    }
+
+    .logo img {
+        height: 60px; /* Reduce logo height for smaller screens */
+    }
+
+    nav ul {
+        margin-top: -35px; /* Adjust margin for smaller screens */
+    }
+
+    nav ul li a {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+    }
+
+    footer {
+        padding: 15px; /* Adjust footer padding for smaller screens */
+    }
+}
